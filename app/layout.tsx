@@ -4,8 +4,7 @@ import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 
 export const metadata = {
   title: "My Mantine app",
-  description: "I have followed setup instructions carefully",
-  viewport: "width=device-width, initial-scale=1.0, user-scalable=no"
+  description: "I have followed setup instructions carefully"
 };
 
 export default function RootLayout({
@@ -17,6 +16,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <ColorSchemeScript />
+        {
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+        }
       </head>
       <body>
         <MantineProvider>{children}</MantineProvider>
