@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Container fluid mt={20}>
-        <Login />
+        {/* <Login /> */}
       </Container>
     </>
   );
